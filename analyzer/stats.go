@@ -5,6 +5,7 @@ import (
 	"strings"
 )
 
-func stats(lines []string) {
-	fmt.Printf(strings.Join(lines, "[INFO]"))
+func Stats(param string) {
+	line := Parser("")
+	fmt.Printf(strings.Join(line, param))
 }
