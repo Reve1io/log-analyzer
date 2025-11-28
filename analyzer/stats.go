@@ -34,5 +34,8 @@ func CalculateStats(filename, flag string) {
 	fmt.Println("Количество информационных записей: ", len(sliceInfo))
 	fmt.Println("Количество рабочих записей: ", len(sliceWarn))
 	fmt.Println("Количество записей с ошибками: ", len(sliceError))
-	fmt.Printf("Все записи c параметром %v: %v\n", flag, filter)
+
+	if flag != "" {
+		fmt.Printf("Все записи c параметром %v: %v\n", flag, filter)
+	}
 }
